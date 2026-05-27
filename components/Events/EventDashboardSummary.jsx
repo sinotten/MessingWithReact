@@ -9,11 +9,11 @@ export function EventDashboardSummary(){
         <div>
             <Card sx={{ 
                 minWidth: 300,
-                maxWidth: 500
+                maxWidth: 300
              }}>
                 <CardContent>
                     <Box className="pb-2">
-                        <div className="py-3">
+                        <div className="py-3 text-xl font-bold">
                             <h2>Company Retreat</h2>
                         </div>
                         <div className="flex">
