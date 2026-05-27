@@ -40,7 +40,7 @@ export function EventDashboardSummary(){
                                 </div>
                                 <span className="px-0.5">/</span>
                                 <div>
-                                    <span>500.00</span>
+                                    <span>$500.00</span>
                                 </div>
                             </div>
                         </div>
