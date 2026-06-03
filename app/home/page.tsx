@@ -21,9 +21,23 @@ export default function Page() {
       {/*right side*/}
       <div className="w-1/4 h-full p-2" >
 
-        {/*right side inner card */}
-        <div className="bg-white rounded-md w-full h-full">
+        {/*right side card */}
+        <div className="bg-white rounded-md w-full h-full p-3">
+          <div className="flex flex-col bg-white">
+            <div>
+              <div className="text-black mb-3">
+                <span className="text-3xl">People</span>
+              </div>
+              <div className="mb-3">
+                <input type="text" className="w-full rounded-md ring px-2 py-1"/>
+              </div>
+            </div>
+            <div className="h-full w-full bg-red-800">
+              <div className="ring">
 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
