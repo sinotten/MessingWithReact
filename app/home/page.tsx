@@ -1,5 +1,6 @@
 import { EventDashboardSummary } from "../../components/Events/EventDashboardSummary";
 import EventDashboardHeader from "../../components/Events/EventDashboardHeader";
+import ContactDashboardSummary from "../../components/People/ContactDashboardSummary"
 
 export default function Page() {
   return (
@@ -24,8 +25,13 @@ export default function Page() {
         <div className="flex flex-col bg-white rounded-md w-full h-full border-2 border-slate-300">
           {/* top search section */}
           <div className="w-full p-3">
-            <div className="text-black mb-3">
-              <span className="text-2xl font-semibold">Contacts </span>
+            <div className="flex justify-between mb-3">
+              <div className="text-black mb-3">
+                <span className="text-2xl font-semibold">Contacts </span>
+              </div>
+              <div>
+                 <button className="p-2 rounded-xl bg-blue-700 hover:bg-blue-800 cursor-pointer active:bg-blue-900 text-sm text-white">+ Add Contact</button>
+              </div>
             </div>
             <div>
               <input type="text" className="w-full rounded-xl ring px-2 py-1 bg-slate-50" placeholder="Search Contacts"/>
@@ -33,29 +39,14 @@ export default function Page() {
           </div>
           {/*Bottom display of contacts */}
           <div className="h-full w-full bg-slate-50 p-5">
-
-            {/* contact card */}
-            <div className="border border-slate-400 border-solid w-full h-fit bg-white rounded-sm shadow-md">
-              <div className="flex">
-                {/*profile image */}
-                <div className="py-2 px-4 w-fit h-full">
-                  <div className="w-10 h-10 rounded-full border border-black">
-                    {/*profile image here */}
-                  </div>
-                </div>
-
-                {/*information section*/}
-                <div className="h-full w-full mt-auto mb-auto">
-                  <div className="w-fit h-fit">
-                    <div>
-                      <span>test mctesterson</span>
-                    </div>
-                    <div>
-                      <span>September 27th, 1990</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="py-2">
+              <ContactDashboardSummary name="Nick Sinotte" birthday="September 27th, 1990" />
+            </div>
+            <div className="py-2">
+              <ContactDashboardSummary name="Sam Sinotte" birthday="August 18th, 1993" />
+            </div>
+            <div className="py-2">
+              <ContactDashboardSummary name="Kenna Sinotte" birthday="July 2nd, 2019" />
             </div>
           </div>
         </div>

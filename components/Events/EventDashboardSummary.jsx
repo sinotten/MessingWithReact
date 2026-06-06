@@ -29,7 +29,7 @@ export function EventDashboardSummary(){
                     <Box>
                         <div className="flex w-full justify-between pt-2">
                             <div>
-                                <span>Budget</span>
+                                <span>BUDGET</span>
                             </div>
                             <div className="flex ">
                                 <div>
